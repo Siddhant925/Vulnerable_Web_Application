@@ -1,0 +1,11 @@
+<h2>All Posts</h2>
+
+{% for post in posts %}
+    <div>
+        <strong>{{ post[1] }}</strong> says:<br>
+        {{ post[2] | safe}}
+        <hr>
+    </div>
+{% endfor %}
+
+<a href="/dashboard">Back</a>
